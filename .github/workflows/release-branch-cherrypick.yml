@@ -40,7 +40,7 @@ permissions:
 
 jobs:
   cherrypick:
-    name: Cherrypick to ${{ github.event.inputs.release_branch}} - ${{ github.event.inputs.git_commit }}
+    name: Cherryick to ${{ github.event.inputs.release_branch}} - ${{ github.event.inputs.git_commit }}
     runs-on: ubuntu-latest
     if: github.repository == 'tensorflow/tensorflow' # Don't do this in forks
     steps:
